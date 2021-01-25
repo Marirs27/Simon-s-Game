@@ -1,0 +1,56 @@
+body {
+  background-color: ffe5b9;
+  font-family: "Bree Serif", serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 3.5rem;
+  line-height: 2;
+  padding: 10px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* Buttons */
+
+.b {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  border-width: 1rem;
+}
+
+.bttn1 {
+  float: right;
+  background-color: green;
+}
+
+.bttn2 {
+  float: left;
+  background-color: red;
+}
+
+.bttn3 {
+  float: right;
+  background-color: yellow;
+}
+
+.bttn4 {
+  float: left;
+  background-color: blue;
+}
+
+.pressed {
+  box-shadow: 0 0 20px whitesmoke;
+  opacity: 0.8;
+}
+
+@media (max-width: 575px) {
+  .bttn1, .bttn2, .bttn3, .bttn4 {
+      float : none;
+  }
+}
