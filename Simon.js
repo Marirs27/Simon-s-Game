@@ -13,8 +13,15 @@ $(document).keypress(function () {
   //  }
 });
 
+$(".bttn5").click(function () {
+  if (firsttime) {
+    $("h1").text("Level " + level + 1);
+    highlightButton();
+    firsttime = false;
+  }
+});
+
 $(".b").click(function () {
-    console.log(this.id)
   playSound(this.id);
   var currentButton = "bttn" + this.id;
   $("." + currentButton).addClass("pressed");
@@ -30,9 +37,12 @@ $(".b").click(function () {
       }, 500);
     }
   } else {
-    var sound = new Audio("Sounds/Wrong.mp3")
+    var sound = new Audio("Sounds/Wrong.mp3");
     sound.play();
-    $("h1").text(" Whoops ! Wrong tile . Press any key to start again .");
+    if ($(window).width() > 991)
+      $("h1").text(" Whoops ! Wrong tile . Press any key to start again .");
+    else 
+      $("h1").text(" Whoops ! Wrong tile . Press Start key again .");
     sequence = [];
     userSequence = [];
     firsttime = true;
@@ -52,25 +62,25 @@ function highlightButton() {
     .fadeIn(200)
     .fadeOut(200)
     .fadeIn(200);
-  playSound(""+randomButtonNumber);
+  playSound("" + randomButtonNumber);
 }
 
 function playSound(key) {
   var sound;
   switch (key) {
-    case '1':
+    case "1":
       sound = new Audio("Sounds/Drum-1.mp3");
       sound.play();
       break;
-    case '2':
+    case "2":
       sound = new Audio("Sounds/Drum-2.mp3");
       sound.play();
       break;
-    case '3':
+    case "3":
       sound = new Audio("Sounds/Drum-3.mp3");
       sound.play();
       break;
-    case '4':
+    case "4":
       sound = new Audio("Sounds/Drum-4.mp3");
       sound.play();
       break;
