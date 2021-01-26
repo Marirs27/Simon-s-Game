@@ -49,7 +49,7 @@ p {
   opacity: 0.8;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 1028px) {
   .bttn1, .bttn2, .bttn3, .bttn4 {
       float : none;
   }
