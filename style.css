@@ -11,7 +11,7 @@ h1 {
   font-size: 3.5rem;
   line-height: 2;
   padding: 10px;
-  color: #0a043c;
+  color: #000;
 }
 
 p {
@@ -67,7 +67,9 @@ p {
   border-width: 10px;
   text-align: center;
   font-size: xx-large;
-  background-color: aliceblue;
+  background-color: #000;
+  color: yellow;
+  border-color: #f3f798;
   visibility: hidden;
 }
 
