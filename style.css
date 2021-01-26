@@ -98,5 +98,8 @@ p {
     font-size: 5rem;
     display:block;
     margin: auto;
-  } 
+  }
+  body {
+    background-size: 100% 500%;
+  }
 }
