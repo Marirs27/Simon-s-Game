@@ -1,7 +1,7 @@
 body {
   background-image: url("Bg.jpg") ;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   font-family: "Bree Serif", serif;
   text-align: center;
 }
@@ -98,5 +98,5 @@ p {
     font-size: 5rem;
     display:block;
     margin: auto;
-  }
+  } 
 }
